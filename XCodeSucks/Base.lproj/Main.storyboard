@@ -15,10 +15,10 @@
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--WelcomeVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="XCodeSucks" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="WelcomeVC" customModule="XCodeSucks" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -87,19 +87,15 @@
                             <constraint firstItem="Kad-gb-koF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wLy-QO-rob"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="bgImg" destination="cpF-5D-S3m" id="2S5-MU-NM5"/>
-                        <outlet property="swoosh" destination="wmF-Cf-By9" id="gFR-Pq-8oA"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-161" y="-176"/>
         </scene>
-        <!--View Controller-->
+        <!--LeagueVC-->
         <scene sceneID="enS-Hr-iyK">
             <objects>
-                <viewController id="WIP-E3-kSm" sceneMemberID="viewController">
+                <viewController id="WIP-E3-kSm" customClass="LeagueVC" customModule="XCodeSucks" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Di6-qj-gMe"/>
                         <viewControllerLayoutGuide type="bottom" id="6AF-Y0-X36"/>
@@ -160,6 +156,9 @@
                                 <state key="normal" title="Next">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="onNextTapped:" destination="WIP-E3-kSm" eventType="touchUpInside" id="2dC-sc-BZN"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ngd-uZ-7kT">
                                 <rect key="frame" x="16" y="40" width="288" height="57"/>
@@ -211,16 +210,19 @@
                             <constraint firstAttribute="trailing" secondItem="eaF-50-pYn" secondAttribute="trailing" id="vzI-5J-5uB"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="uxV-Wa-lZx" kind="show" identifier="skillVCSegue" id="Rml-B2-bI0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pkY-Dj-Yc4" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="3L8-Ae-9fQ" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="684.375" y="-176.40845070422534"/>
         </scene>
-        <!--View Controller-->
+        <!--SkillVC-->
         <scene sceneID="SZx-2G-zPd">
             <objects>
-                <viewController id="uxV-Wa-lZx" sceneMemberID="viewController">
+                <viewController id="uxV-Wa-lZx" customClass="SkillVC" customModule="XCodeSucks" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="VKT-Gs-sV8"/>
                         <viewControllerLayoutGuide type="bottom" id="49B-Wv-Aai"/>

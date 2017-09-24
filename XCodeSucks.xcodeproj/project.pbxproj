@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF24835D1F7770620052DCD4 /* LeagueVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF24835C1F7770620052DCD4 /* LeagueVC.swift */; };
+		FF24835F1F77708C0052DCD4 /* SkillVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF24835E1F77708C0052DCD4 /* SkillVC.swift */; };
 		FF37A9D11F664F46001A8C2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF37A9D01F664F46001A8C2B /* AppDelegate.swift */; };
-		FF37A9D31F664F46001A8C2B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF37A9D21F664F46001A8C2B /* ViewController.swift */; };
+		FF37A9D31F664F46001A8C2B /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF37A9D21F664F46001A8C2B /* WelcomeVC.swift */; };
 		FF37A9D61F664F46001A8C2B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF37A9D41F664F46001A8C2B /* Main.storyboard */; };
 		FF37A9D81F664F46001A8C2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF37A9D71F664F46001A8C2B /* Assets.xcassets */; };
 		FF37A9DB1F664F46001A8C2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF37A9D91F664F46001A8C2B /* LaunchScreen.storyboard */; };
@@ -16,9 +18,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FF24835C1F7770620052DCD4 /* LeagueVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueVC.swift; sourceTree = "<group>"; };
+		FF24835E1F77708C0052DCD4 /* SkillVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillVC.swift; sourceTree = "<group>"; };
 		FF37A9CD1F664F46001A8C2B /* XCodeSucks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XCodeSucks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF37A9D01F664F46001A8C2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FF37A9D21F664F46001A8C2B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FF37A9D21F664F46001A8C2B /* WelcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
 		FF37A9D51F664F46001A8C2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FF37A9D71F664F46001A8C2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF37A9DA1F664F46001A8C2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,6 +41,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FF24835A1F776DFC0052DCD4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FF37A9D21F664F46001A8C2B /* WelcomeVC.swift */,
+				FF24835C1F7770620052DCD4 /* LeagueVC.swift */,
+				FF24835E1F77708C0052DCD4 /* SkillVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FF24835B1F776E6A0052DCD4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		FF37A9C41F664F46001A8C2B = {
 			isa = PBXGroup;
 			children = (
@@ -56,9 +77,10 @@
 		FF37A9CF1F664F46001A8C2B /* XCodeSucks */ = {
 			isa = PBXGroup;
 			children = (
-				FF37A9E21F66578F001A8C2B /* Views */,
+				FF24835B1F776E6A0052DCD4 /* Model */,
+				FF24835A1F776DFC0052DCD4 /* Controller */,
+				FF37A9E21F66578F001A8C2B /* View */,
 				FF37A9D01F664F46001A8C2B /* AppDelegate.swift */,
-				FF37A9D21F664F46001A8C2B /* ViewController.swift */,
 				FF37A9D41F664F46001A8C2B /* Main.storyboard */,
 				FF37A9D71F664F46001A8C2B /* Assets.xcassets */,
 				FF37A9D91F664F46001A8C2B /* LaunchScreen.storyboard */,
@@ -67,12 +89,12 @@
 			path = XCodeSucks;
 			sourceTree = "<group>";
 		};
-		FF37A9E21F66578F001A8C2B /* Views */ = {
+		FF37A9E21F66578F001A8C2B /* View */ = {
 			isa = PBXGroup;
 			children = (
 				FF37A9E31F6657BE001A8C2B /* BorderButton.swift */,
 			);
-			path = Views;
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,8 +168,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF37A9D31F664F46001A8C2B /* ViewController.swift in Sources */,
+				FF37A9D31F664F46001A8C2B /* WelcomeVC.swift in Sources */,
+				FF24835D1F7770620052DCD4 /* LeagueVC.swift in Sources */,
 				FF37A9D11F664F46001A8C2B /* AppDelegate.swift in Sources */,
+				FF24835F1F77708C0052DCD4 /* SkillVC.swift in Sources */,
 				FF37A9E41F6657BE001A8C2B /* BorderButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -324,6 +348,7 @@
 				FF37A9E11F664F46001A8C2B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
